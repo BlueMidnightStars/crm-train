@@ -1,7 +1,7 @@
 {% extends './../public.tpl' %}
 {% block css %}
     <link rel="stylesheet" href="/stylesheets/public.css">
-    <link rel="stylesheet" href="/stylesheets/user-all.css">
+    <link rel="stylesheet" href="/stylesheets/user-list.css">
 {% endblock %}
 {% block userclue  %}
 <!-- 人员管理 -->
