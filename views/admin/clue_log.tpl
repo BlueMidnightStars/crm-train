@@ -1,7 +1,7 @@
 {% extends './../public.tpl' %}
 {% block css %}
  <link rel="stylesheet" href="/stylesheets/public.css">
-  <link rel="stylesheet" href="/stylesheets/allot.css">
+  <link rel="stylesheet" href="/stylesheets/clue_log.css">
 {% endblock %}
 
 {% block userclue %}

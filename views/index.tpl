@@ -1,6 +1,6 @@
 {% extends './layout.tpl' %}
 {% block css %}
-<link rel="stylesheet" href="/stylesheets/reception.css"/>
+<link rel="stylesheet" href="/stylesheets/index.css"/>
 {% endblock %}
 
 {% block content %}
