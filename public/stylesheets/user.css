@@ -1,0 +1,129 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+.redact-section{
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    margin-right: 0;
+    background-color: #fff;
+    height: 1000px;
+    vertical-align: top;
+}
+.redact-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 30px;
+    border-bottom: 1px solid #000;
+}
+.redact-header-title{
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+}
+.redact-header-desc{
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+.redact-container{
+    padding:20px 30px;
+
+}
+.redact-name-container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+
+}
+.redact-name-title{
+    display: inline-block;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+
+}
+.redact-name{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    color: #333;
+}
+
+
+.redact-cellphone-container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+
+
+}
+.redact-cellphone-title{
+    display: inline-block;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+
+}
+.redact-cellphone{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    color: #333;
+}
+
+
+.redact-code-container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+
+
+}
+.redact-code-title{
+    display: inline-block;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+
+}
+.redact-code{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 23px;
+    color: #333;
+}
+.redact-pose-container{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 30px;
+}
+.redact-pose-title{
+    display: inline-block;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px;
+}
+.redact-pose{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: #333;
+}
+.redact-save{
+    width: 200px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 32px;
+    line-height: 60px;
+    border-radius: 5px;
+}

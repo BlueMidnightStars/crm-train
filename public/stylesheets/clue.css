@@ -1,0 +1,152 @@
+
+.redact-section{
+    display: inline-block;
+    width: 70%;
+    margin: 0 auto;
+    margin-right: 0;
+    background-color: #fff;
+    height: 1000px;
+    vertical-align: top;
+}
+.redact-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 30px;
+    border-bottom: 1px solid #000;
+}
+.redact-header-title{
+    margin: 0;
+    font-size: 32px;
+    color: #333;
+}
+.redact-header-desc{
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+}
+.crew-container{
+    margin-top: 10px;
+    font-size: 0;
+    
+
+}
+.crew-list{
+    border: 1px solid #333;
+    font-weight: 500;
+}
+.crew-list-item-name{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.crew-list-cellphone{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 180px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.crew-list-part{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.crew-list-time{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 180px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+.crew-list-handle{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+
+
+
+
+.crew-list-item-name-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+}
+.crew-list-cellphone-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 180px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+}
+.crew-list-part-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+}
+.crew-list-time-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 180px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+}
+.crew-list-handle-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 100px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #666;
+}
+.crew-list-handle-desc-a{
+    text-decoration: none; 
+    color: #666;
+}
+.crew-list-item-follow{
+    border: 1px solid #333;
+    font-weight: 500;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+}
+.crew-list-item-follow-desc{
+    border: 1px solid #666;
+    font-weight: 300;
+    width: 120px;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    text-decoration: none;
+    color: #666;
+}

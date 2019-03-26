@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.index-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.index-section{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.index-centre-title{
+    font-size: 32px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.index-centre-cellphone{
+    margin-bottom: 28px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    color:#333;
+
+}
+.index-centre-cellphone-title{
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+}
+.index-centre-cellphone-desc{
+    color: #333;
+    border: none;
+    outline:none;
+    font-size: 24px
+}
+.index-centre-password{
+    margin-bottom: 28px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+    color:#333;
+
+}
+.index-centre-password-title{
+    display: inline-block;
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+}
+.index-centre-password-desc{
+    color: #333;
+    border: none;
+    outline:none;
+    font-size: 24px
+}
+.index-centre-save{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 46px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    outline:none;
+
+}
