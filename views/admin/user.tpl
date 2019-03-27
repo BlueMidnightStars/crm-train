@@ -20,13 +20,20 @@
                     <th class="crew-list-handle">操作</th>
 
                 </tr>
+                {{users}}
+                {% for val in users  %}
                 <tr>
-                    <td class="crew-list-item-name-desc">姓名</td>
-                    <td class="crew-list-cellphone-desc">电话</td>
-                    <td class="crew-list-part-desc">角色</td>
-                    <td class="crew-list-time-desc">创建时间</td>
+                    <td class="crew-list-item-name-desc">{{val.name}}</td>
+                    <td class="crew-list-cellphone-desc">{{val.phone}}</td>
+                    {% if val.role == 1 %} 
+                    <td class="crew-list-part-desc">管理</td>
+                    {% elif val.role == 2 %}
+                    <td class="crew-list-part-desc">销售</td>
+                    {% endif %}
+                    <td class="crew-list-time-desc">{{val.created_time}}</td>
                     <td class="crew-list-handle-desc"><a class="crew-list-handle-desc-a" href="javascript:;">操作</a></td>
                 </tr>
+                {% endfor %}
             </table>
         </div>
     </div>

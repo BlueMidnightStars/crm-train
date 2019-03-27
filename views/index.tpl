@@ -13,10 +13,43 @@
             <input type="text" class="index-centre-cellphone-desc" placeholder="请输入手机号码">
         </div>
         <div class="index-centre-password">
-            <p class="index-centre-password-title">密码</p>
-            <input type="text" class="index-centre-password-desc" placeholder="请输入密码">
+            <p class="index-centre-password-title">姓名</p>
+            <input type="text" class="index-centre-password-desc" placeholder="请输入姓名">
         </div>
         <button class="index-centre-save">马上抢占名额</button>
     </div>
 </div>
+{% endblock %}
+{% block js %}
+<script src="javascripts/jquery.js"></script>
+<script>
+    const getData = {
+        init:function(){
+            this.bind()
+        },
+        bind:function(){
+            $('.index-centre-save').on('click', this.getValue)
+        },
+        getValue:function(){
+            let phone = $('.index-centre-cellphone-desc').val();
+            let password = $('.index-centre-password-desc').val();
+            if(phone == '' || password == ''){
+                return
+            }
+            console.log(phone,password);
+            $.ajax({
+                type: 'POST',
+                url: '/?source=' + '随意',
+                data: {phone,password},
+                success: ( res )=>{
+                    console.log(res)
+                },
+                error: (err) => {
+                    console.log(err)
+                }
+            })
+        }
+    }
+    getData.init();
+</script>
 {% endblock %}
