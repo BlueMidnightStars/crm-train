@@ -1,7 +1,7 @@
 const mood = require('./../model/user.js');
 const user = new mood();
 
-const redact_user = {
+const user_editController = {
     show:async function(req,res,next){
         try{
            let id = req.params.id;
@@ -32,4 +32,4 @@ const redact_user = {
     }
 
 }
-module.exports = redact_user;
+module.exports = user_editController;

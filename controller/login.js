@@ -2,7 +2,7 @@ const mood = require('./../model/user.js');
 const user = new mood();
 const authCodeFunc = require('./../utils/authCode.js');
 
-const enter = {
+const loginController = {
     show:async function(req, res, next){
        try{ 
            console.log(res.locals.isLogin);
@@ -28,4 +28,4 @@ const enter = {
         }
     }
 }
-module.exports = enter;
+module.exports = loginController;

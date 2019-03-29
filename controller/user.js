@@ -1,7 +1,7 @@
 const mood = require('../model/user.js');
 const user = new mood();
 const time = require('../utils/time.js');
-const referModel= {
+const userController= {
     show: async function(req,res,next){
       try{
         const users = await user.all();
@@ -30,4 +30,4 @@ const referModel= {
     
     }
 }
-module.exports = referModel;
+module.exports = userController;

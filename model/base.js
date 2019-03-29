@@ -1,5 +1,5 @@
 // 数据库的各种操作方法
-const knex = require('./../knex/knex.js');
+const knex = require('./knex.js');
 class operation{
 	constructor(props) {
 		this.table = props;

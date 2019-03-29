@@ -1,7 +1,7 @@
 const mood = require('./../model/clue.js');
 const user = new mood();
 
-const addclue = {
+const indexController = {
     show: async function(req,res,next){
       try{
         let phone = req.body.phone;
@@ -18,4 +18,4 @@ const addclue = {
       }
     }
 }
-module.exports = addclue;
+module.exports = indexController;

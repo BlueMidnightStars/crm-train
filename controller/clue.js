@@ -7,8 +7,7 @@ const clue_log = new moodels();
 const time = require('../utils/time.js');
 
 
-console.log(time);
-const referClue = {
+const clueController = {
     show: async function(req,res,next){
       try{
         const clues = await clue.all();
@@ -78,4 +77,4 @@ const referClue = {
 
     }
 }
-module.exports = referClue;
+module.exports = clueController;
