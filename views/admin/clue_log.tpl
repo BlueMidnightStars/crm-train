@@ -80,6 +80,7 @@
         bind:function(){
             $('.allot-redact-save').on('click',this.refer);
             $('.allot-section-affixion-add-save').on('click',this.record);
+            $('.redact-header-desc').on('click',this.backtrack)
         },
         refer:function(){
             let id = $('.allot-section').data('id');
@@ -121,6 +122,9 @@
                     console.log(err)
                 }
             })
+        },
+        backtrack:function(){
+            location.href = '/admin/clue';
         }
     }
     refer.init();

@@ -1,7 +1,7 @@
-const mood = require('./../model/user.js');
+const mood = require('../model/user.js');
 const user = new mood();
-const time = require('./../filters/time.js');
-const referUSER = {
+const time = require('../utils/time.js');
+const referModel= {
     show: async function(req,res,next){
       try{
         const users = await user.all();
@@ -30,4 +30,4 @@ const referUSER = {
     
     }
 }
-module.exports = referUSER;
+module.exports = referModel;

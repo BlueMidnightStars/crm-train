@@ -5,13 +5,13 @@ var router = express.Router();
 // router.get('/', function(req, res, next) {
 //   res.render('index', { title: 'Express' });
 // });
-let authController = require('./../controller/auth');
+let authController = require('../middlewares/auth');
 
-let user = require('./../models/user');
-let index = require('./../models/index');
-let login = require('./../models/login');
-let clue = require('./../models/clue');
-let user_edit = require('./../models/user_edit');
+let user = require('../controller/user');
+let index = require('../controller/index');
+let login = require('../controller/login');
+let clue = require('../controller/clue');
+let user_edit = require('../controller/user_edit');
 
 
 // 前台

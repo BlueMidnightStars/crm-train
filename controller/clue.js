@@ -1,14 +1,14 @@
-const mood = require('./../model/clue.js');
-const moodel = require('./../model/user.js');
-const moodels = require('./../model/clue_log.js');
+const mood = require('../model/clue.js');
+const moodel = require('../model/user.js');
+const moodels = require('../model/clue_log.js');
 const clue = new mood();
 const user = new moodel();
 const clue_log = new moodels();
-const time = require('./../filters/time.js');
+const time = require('../utils/time.js');
 
 
 console.log(time);
-const referclue = {
+const referClue = {
     show: async function(req,res,next){
       try{
         const clues = await clue.all();
@@ -78,4 +78,4 @@ const referclue = {
 
     }
 }
-module.exports = referclue;
+module.exports = referClue;
