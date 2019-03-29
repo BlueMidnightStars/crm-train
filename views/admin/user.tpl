@@ -20,7 +20,6 @@
                     <th class="crew-list-handle">操作</th>
 
                 </tr>
-                {{users}}
                 {% for val in users  %}
                 <tr>
                     <td class="crew-list-item-name-desc">{{val.name}}</td>
@@ -30,11 +29,35 @@
                     {% elif val.role == 2 %}
                     <td class="crew-list-part-desc">销售</td>
                     {% endif %}
-                    <td class="crew-list-time-desc">{{val.created_time}}</td>
-                    <td class="crew-list-handle-desc"><a class="crew-list-handle-desc-a" href="javascript:;">操作</a></td>
+                    <td class="crew-list-time-desc">{{val.created_time_display}}</td>
+                    <td class="crew-list-handle-desc"><a class="crew-list-handle-desc-a" data-id="{{val.id}}" href="javascript:;">操作</a></td>
                 </tr>
                 {% endfor %}
             </table>
         </div>
     </div>
+{% endblock %}
+{% block js %}
+
+<script src="/javascripts/jquery.js"></script>
+<script>
+    let skip = {
+        init:function(){
+            this.bind();
+        },
+        bind:function(){
+            $('.crew-list-handle-desc-a').on('click',this.clickSkip);
+            $('.redact-header-desc').on('click',this.adduser)
+        },
+        clickSkip:function(e){
+            let id = $(this).data('id');
+            location.href = '/admin/user/' + id + '/edit';
+        },
+        adduser:function(){
+            location.href = '/admin/user/create';
+
+        }
+    }
+    skip.init();
+</script> 
 {% endblock %}
